@@ -44,7 +44,7 @@ public class CoderedWebTest {
     }
 
     @EnumSource(Language.class)
-    @ParameterizedTest(name = "При выборе языка {0} отображается корректный плэйсхолдер")
+    @ParameterizedTest(name = "При выборе языка {0} отображается корректный плэйсхолдер ")
     @Tag("BLOCKER")
     void changeTheLanguageOnTheGear(Language language) {
         $$(".lang_icon").find(text(language.name())).click();
